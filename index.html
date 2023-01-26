@@ -1,19 +1,33 @@
+<!-- index.html -->
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta charset="UTF-8">
+  <meta name="referrer" content="no-referrer">
+  <!-- old/original stylesheet <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">-->
+  <link rel="stylesheet" href="style.css" type="text/css">
   <title>Buch.</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="A magical book.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
 </head>
 <body>
   <div id="app"></div>
   <script>
+  <script>
     window.$docsify = {
-      name: 'Buch',
-      repo: 'docsifyjs/docsify-cli'
+       el: "#app",
+    loadSidebar: true,
+    name: 'Buch',
+    auto2top: true,
+    noEmoji: true,
+    executeScript: true,
+    loadFooter: true,
+    pagination: {
+      previousText: 'ZURÜCK',
+      nextText: 'VOR',
+      crossChapter: true
+       },
     }
  </script>
 <script type="text/javascript" src="js/accordeon.js"></script>
